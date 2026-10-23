@@ -1,0 +1,411 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio | Student Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+        body {
+            font-family: Arial, sans-serif;
+            background: #080d1a;
+            color: #f4f6ff;
+            line-height: 1.7;
+        }
+        header {
+            background: #10182b;
+            padding: 18px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+            border-bottom: 1px solid #27334d;
+        }
+        .logo {
+            color: #f5c76a;
+            font-size: 24px;
+            font-weight: bold;
+        }
+        nav a {
+            color: #f4f6ff;
+            text-decoration: none;
+            margin: 0 9px;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #f5c76a;
+        }
+        section {
+            padding: 65px 8%;
+            scroll-margin-top: 15px;
+        }
+        .hero {
+            min-height: 440px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 35px;
+            flex-wrap: wrap;
+            background: linear-gradient(135deg, #10182b, #172544);
+        }
+        .hero-content {
+            flex: 1 1 280px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.25;
+            margin: 12px 0;
+        }
+        .highlight {
+            color: #f5c76a;
+        }
+        .tagline {
+            color: #c3cce0;
+            margin-bottom: 24px;
+        }
+        .button {
+            display: inline-block;
+            background: #f5c76a;
+            color: #10182b;
+            text-decoration: none;
+            padding: 11px 22px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+        .button:hover {
+            transform: translateY(-3px);
+        }
+        .profile {
+            width: 210px;
+            height: 210px;
+            border: 3px solid #f5c76a;
+            border-radius: 50%;
+            background: #263653;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 75px;
+            margin: auto;
+        }
+        .section-title {
+            font-size: 30px;
+            margin-bottom: 25px;
+        }
+        .section-title span {
+            color: #f5c76a;
+        }
+        .about-text {
+            color: #c3cce0;
+            max-width: 850px;
+        }
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 20px;
+        }
+        .card {
+            background: #111a2d;
+            border: 1px solid #283650;
+            padding: 23px;
+            border-radius: 12px;
+            transition: transform 0.3s, border-color 0.3s;
+        }
+        .card:hover {
+            transform: translateY(-5px);
+            border-color: #f5c76a;
+        }
+        .card h3 {
+            color: #f5c76a;
+            margin-bottom: 10px;
+        }
+        .card p, .card li {
+            color: #c3cce0;
+        }
+        .card ul {
+            padding-left: 20px;
+        }
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+        .skill {
+            padding: 9px 17px;
+            border: 1px solid #f5c76a;
+            border-radius: 25px;
+            color: #f5c76a;
+            background: #111a2d;
+        }
+        .education-table {
+            width: 100%;
+            border-collapse: collapse;
+            background: #111a2d;
+        }
+        .education-table th,
+        .education-table td {
+            padding: 14px;
+            border: 1px solid #34415a;
+            text-align: left;
+        }
+        .education-table th {
+            color: #f5c76a;
+            background: #18243c;
+        }
+        .contact-box {
+            background: #111a2d;
+            border: 1px solid #283650;
+            padding: 25px;
+            border-radius: 12px;
+        }
+        .contact-box a {
+            color: #f5c76a;
+            overflow-wrap: anywhere;
+        }
+        footer {
+            text-align: center;
+            background: #10182b;
+            color: #c3cce0;
+            padding: 22px;
+            border-top: 1px solid #27334d;
+        }
+            nav a {
+                display: inline-block;
+                margin: 4px 6px;
+            }
+            .hero {
+                text-align: center;
+                justify-content: center;
+            }
+            section {
+                padding: 45px 6%;
+            }
+            .education-table {
+                font-size: 13px;
+            }
+            .education-table th,
+            .education-table td {
+                padding: 8px;
+            }
+        
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="logo">MyPortfolio.</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#education">Education</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Home -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <p class="highlight">HELLO, WELCOME TO MY PORTFOLIO</p>
+
+            <h1>I'm <span class="highlight">Thulasi Ranganath</span></h1>
+
+            <h2>B.Tech CSM Student</h2>
+
+            <p class="tagline">
+                Aspiring Developer | Creative Thinker |
+                Lifelong Learner
+            </p>
+
+            <a href="#about" class="button">Explore My Portfolio</a>
+        </div>
+
+        <div class="profile" aria-label="Student profile symbol">
+            TR
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About <span>Me</span></h2>
+
+        <p class="about-text">
+            Hello! I'm Thulasi Ranganath, a B.Tech student
+            specializing in CSM at NRI University. I am interested
+            in programming, web development, and technology.
+            I enjoy learning new skills, solving problems, and
+            developing creative projects. My goal is to improve
+            my technical knowledge and become a skilled developer.
+        </p>
+    </section>
+
+    <!-- Education -->
+    <section id="education">
+        <h2 class="section-title">My <span>Education</span></h2>
+
+        <table class="education-table">
+            <thead>
+                <tr>
+                    <th>Qualification</th>
+                    <th>Institution</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                <tr>
+                    <td>B.Tech - CSM</td>
+                    <td>NRI University</td>
+                    <td>Currently Studying</td>
+                </tr>
+
+                <tr>
+                    <td>Intermediate</td>
+                    <td>To be updated</td>
+                    <td>Completed</td>
+                </tr>
+
+                <tr>
+                    <td>School Education</td>
+                    <td>To be updated</td>
+                    <td>Completed</td>
+                </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills">
+        <h2 class="section-title">Technical <span>Skills</span></h2>
+
+        <div class="skills">
+            <span class="skill">Python</span>
+            <span class="skill">HTML</span>
+            <span class="skill">CSS</span>
+            <span class="skill">Problem Solving</span>
+            <span class="skill">Programming Basics</span>
+        </div>
+    </section>
+
+    <!-- Projects -->
+    <section id="projects">
+        <h2 class="section-title">My <span>Projects</span></h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>Personal Portfolio</h3>
+                <p>
+                    A responsive personal website built using
+                    HTML and CSS to showcase my profile and skills.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>College Webpage</h3>
+                <p>
+                    A webpage concept for presenting college
+                    information, courses, and facilities.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Python Programs</h3>
+                <p>
+                    A collection of beginner Python exercises
+                    that demonstrate programming fundamentals.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Hobbies -->
+    <section id="hobbies">
+        <h2 class="section-title">My <span>Hobbies</span></h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>🏸 Badminton</h3>
+                <p>Practising badminton and improving my skills.</p>
+            </article>
+
+            <article class="card">
+                <h3>💻 Coding</h3>
+                <p>Exploring programming and building webpages.</p>
+            </article>
+
+            <article class="card">
+                <h3>📚 Learning</h3>
+                <p>Learning new concepts and developing knowledge.</p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Achievements -->
+    <section id="achievements">
+        <h2 class="section-title">My <span>Achievements</span></h2>
+
+        <div class="card">
+            <h3>Learning and Growth</h3>
+            <ul>
+                <li>Learning Python programming.</li>
+                <li>Developing HTML and CSS projects.</li>
+                <li>Working towards academic excellence.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Resume -->
+    <section id="resume">
+        <h2 class="section-title">My <span>Resume</span></h2>
+
+        <div class="card">
+            <p>
+                This portfolio introduces my education, skills,
+                interests, and projects. A resume file can be
+                added here when it is ready.
+            </p>
+            <p style="margin-top: 15px;">
+                <a class="button" href="#contact">Contact Me</a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+        <h2 class="section-title">Contact <span>Me</span></h2>
+
+        <div class="contact-box">
+            <p><strong>Name:</strong> Thulasi Ranganath</p>
+            <p><strong>Branch:</strong> B.Tech CSM</p>
+            <p><strong>College:</strong> NRI University</p>
+            <p>
+                <strong>Email:</strong>
+                <a href="mailto:your-email@example.com">
+                    your-email@example.com
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 Thulasi Ranganath |
+            Designed with HTML and CSS
+        </p>
+    </footer>
+
+</body>
+</html>
