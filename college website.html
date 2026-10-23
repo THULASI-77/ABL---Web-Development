@@ -1,0 +1,528 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NRI University | College Website</title>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #f4f7fc;
+            color: #1c2940;
+            line-height: 1.6;
+        }
+
+        header {
+            background: #102b50;
+            color: white;
+            padding: 18px 7%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .logo {
+            font-size: 25px;
+            font-weight: bold;
+            color: #ffd36a;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 9px;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffd36a;
+        }
+
+        .hero {
+            padding: 95px 8%;
+            min-height: 380px;
+            color: white;
+            background:
+                linear-gradient(110deg, #102b50, #246b86);
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-content {
+            max-width: 720px;
+        }
+
+        .hero h1 {
+            font-size: clamp(32px, 5vw, 48px);
+            line-height: 1.2;
+            margin-bottom: 18px;
+        }
+
+        .hero p {
+            font-size: 17px;
+            margin-bottom: 25px;
+            color: #e0eaf6;
+        }
+
+        .button {
+            display: inline-block;
+            background: #ffd36a;
+            color: #102b50;
+            padding: 12px 22px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+            transition: transform 0.3s;
+        }
+
+        .button:hover {
+            transform: translateY(-3px);
+        }
+
+        section {
+            padding: 60px 8%;
+            scroll-margin-top: 15px;
+        }
+
+        .section-title {
+            font-size: 30px;
+            text-align: center;
+            margin-bottom: 12px;
+            color: #102b50;
+        }
+
+        .section-intro {
+            text-align: center;
+            color: #64748b;
+            margin: 0 auto 30px;
+            max-width: 700px;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns:
+                repeat(auto-fit, minmax(220px, 1fr));
+            gap: 22px;
+        }
+
+        .card {
+            background: white;
+            padding: 24px;
+            border-radius: 10px;
+            border: 1px solid #e0e7f0;
+            box-shadow: 0 5px 18px #102b5010;
+            transition: transform 0.3s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card h3 {
+            color: #176b87;
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            color: #58677c;
+        }
+
+        .highlight-section {
+            background: #e8f0fa;
+        }
+
+        .steps {
+            padding-left: 22px;
+        }
+
+        .steps li {
+            margin: 12px 0;
+        }
+
+        .event-date {
+            color: #a76c00;
+            font-weight: bold;
+        }
+
+        .contact {
+            background: #102b50;
+            color: white;
+        }
+
+        .contact .section-title {
+            color: white;
+        }
+
+        .contact .section-intro {
+            color: #d5e1ef;
+        }
+
+        .contact-card {
+            max-width: 650px;
+            margin: auto;
+            background: #19395e;
+            padding: 28px;
+            border-radius: 10px;
+        }
+
+        .contact-card p {
+            margin: 10px 0;
+        }
+
+        .contact-card a {
+            color: #ffd36a;
+            overflow-wrap: anywhere;
+        }
+
+        footer {
+            background: #091b32;
+            color: #d5e1ef;
+            text-align: center;
+            padding: 20px;
+        }
+            nav a {
+                display: inline-block;
+                margin: 5px;
+            }
+
+            .hero {
+                padding: 65px 7%;
+                text-align: center;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+    </style>
+</head>
+
+<body>
+
+    <!-- Header and Navigation -->
+    <header>
+        <div class="logo">NRI UNIVERSITY</div>
+
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#departments">Departments</a>
+            <a href="#faculty">Faculty</a>
+            <a href="#admissions">Admissions</a>
+            <a href="#facilities">Facilities</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Banner -->
+    <section class="hero" id="home">
+        <div class="hero-content">
+            <h1>Welcome to <span style="color:#ffd36a;">
+                NRI University</span></h1>
+
+            <p>
+                Learn today, lead tomorrow. Explore knowledge,
+                develop your skills, and build your future
+                through quality education.
+            </p>
+
+            <a href="#admissions" class="button">
+                Explore Admissions
+            </a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+        <h2 class="section-title">About Our University</h2>
+
+        <p class="section-intro">
+            A college website provides students with information
+            about academics, departments, campus facilities,
+            admissions, and university activities.
+        </p>
+
+        <div class="grid">
+            <article class="card">
+                <h3>🎓 Academic Excellence</h3>
+                <p>
+                    Encourage learning, critical thinking,
+                    creativity, and problem-solving skills.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>💡 Innovation</h3>
+                <p>
+                    Explore technology and develop practical
+                    knowledge through academic projects.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>🌱 Student Development</h3>
+                <p>
+                    Support teamwork, communication,
+                    leadership, and personal growth.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Departments -->
+    <section class="highlight-section" id="departments">
+        <h2 class="section-title">Our Departments</h2>
+
+        <p class="section-intro">
+            Explore different areas of engineering and technology.
+        </p>
+
+        <div class="grid">
+            <article class="card">
+                <h3>CSM</h3>
+                <p>
+                    Computer Science and Engineering
+                    (Artificial Intelligence and Machine Learning).
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>CSE</h3>
+                <p>
+                    Computer Science and Engineering,
+                    focusing on computing fundamentals.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>ECE</h3>
+                <p>
+                    Electronics and Communication Engineering.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>EEE</h3>
+                <p>
+                    Electrical and Electronics Engineering.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses">
+        <h2 class="section-title">Popular Courses</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>B.Tech CSM</h3>
+                <p>
+                    Programming, computing, artificial intelligence,
+                    and machine learning fundamentals.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>B.Tech CSE</h3>
+                <p>
+                    Software development, algorithms,
+                    databases, and computing.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>B.Tech ECE</h3>
+                <p>
+                    Electronics, communication systems,
+                    and embedded technology.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Faculty -->
+    <section class="highlight-section" id="faculty">
+        <h2 class="section-title">Faculty Information</h2>
+
+        <p class="section-intro">
+            Faculty members guide students in their academic
+            learning, practical work, and professional development.
+        </p>
+
+        <div class="grid">
+            <article class="card">
+                <h3>Computer Science Faculty</h3>
+                <p>
+                    Supports programming, computational thinking,
+                    and software development learning.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Electronics Faculty</h3>
+                <p>
+                    Guides students through electronics concepts
+                    and laboratory activities.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>Mathematics Faculty</h3>
+                <p>
+                    Helps students strengthen mathematical
+                    reasoning and analytical skills.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Admissions -->
+    <section id="admissions">
+        <h2 class="section-title">Admissions</h2>
+
+        <p class="section-intro">
+            Students should check the university's official
+            admission notifications for current eligibility,
+            dates, fees, and application procedures.
+        </p>
+
+        <div class="card">
+            <h3>General Admission Process</h3>
+
+            <ol class="steps">
+                <li>Check the eligibility requirements.</li>
+                <li>Choose your preferred course.</li>
+                <li>Prepare the required documents.</li>
+                <li>Submit the application through the
+                    official admission process.</li>
+                <li>Follow the official instructions
+                    regarding selection and enrollment.</li>
+            </ol>
+
+            <p style="margin-top: 18px;">
+                <a class="button" href="#contact">
+                    Admission Enquiry
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Campus Facilities -->
+    <section class="highlight-section" id="facilities">
+        <h2 class="section-title">Campus Facilities</h2>
+
+        <div class="grid">
+            <article class="card">
+                <h3>📚 Library</h3>
+                <p>
+                    A learning space for reading, reference
+                    materials, and academic study.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>💻 Computer Labs</h3>
+                <p>
+                    Practical computing activities and
+                    programming practice.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>🏏 Sports</h3>
+                <p>
+                    Recreational and physical activities
+                    for student development.
+                </p>
+            </article>
+
+            <article class="card">
+                <h3>🚌 Transport</h3>
+                <p>
+                    Students can contact the institution
+                    for transport routes and availability.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section id="events">
+        <h2 class="section-title">Campus Events</h2>
+
+        <div class="grid">
+            <article class="card">
+                <p class="event-date">TECHNICAL</p>
+                <h3>Technical Symposium</h3>
+                <p>
+                    A proposed event for showcasing technical
+                    knowledge, presentations, and projects.
+                </p>
+            </article>
+
+            <article class="card">
+                <p class="event-date">CULTURAL</p>
+                <h3>Cultural Festival</h3>
+                <p>
+                    A proposed celebration of creativity,
+                    arts, and student participation.
+                </p>
+            </article>
+
+            <article class="card">
+                <p class="event-date">LEARNING</p>
+                <h3>Student Workshop</h3>
+                <p>
+                    A proposed opportunity to explore new
+                    skills and practical learning.
+                </p>
+            </article>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact" id="contact">
+        <h2 class="section-title">Contact Us</h2>
+
+        <p class="section-intro">
+            Contact the university through its verified
+            official channels for accurate information.
+        </p>
+
+        <div class="contact-card">
+            <p><strong>Institution:</strong> NRI University</p>
+            <p><strong>Enquiries:</strong> Admissions Office</p>
+            <p><strong>Address:</strong> Update with the
+                verified campus address.</p>
+            <p><strong>Email:</strong> Update with the
+                official university email.</p>
+            <p>
+                <strong>Website:</strong>
+                <a href="https://www.nri.edu.in/">
+                    Visit university website
+                </a>
+            </p>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>
+            &copy; 2026 NRI University Website Project.
+            Created using HTML and CSS.
+        </p>
+    </footer>
+
+</body>
+</html>
