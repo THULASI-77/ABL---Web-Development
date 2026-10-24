@@ -8,7 +8,6 @@
 - **Roll Number:** 26001000
 - **Branch:** CSM
 - **Section:** 3
-- **College:** NRI University
 
 ---
 
